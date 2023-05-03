@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+  <script type="module" src="lib/editor.js"></script>
+</head>
+
+<body>
+  <div id="editor" width="90%" height="600" background-color="green"></div>
+  <textarea id="input">
+    {
+      "mainTable名": {
+        "columns": [
+          "hoge",
+          "fuga",
+          "piyo"
+        ],
+        "datas": [
+          {
+            "hoge": "record1 hoge",
+            "fuga": "record1 fuga",
+            "piyo": "record1 piyo"
+          },
+          {
+            "subTable名": [
+              {
+                "hoge": "subtable1_record1 hoge",
+                "fuga": "subtable1_record1 fuga",
+                "piyo": "subtable1_record1 piyo"
+              },
+              {
+                "hoge": "subtable1_record2 hoge",
+                "fuga": "subtable1_record2 fuga",
+                "piyo": "subtable1_record2 piyo"
+              }
+            ]
+          },
+          {
+            "hoge": 123,
+            "fuga": 456,
+            "piyo": 789
+          }
+        ],
+        "rules": []
+      }
+    }
+  </textarea>
+  <pre id="output"></pre>
+  <button id="testbutton">
+    JSON を変換
+  </button>
+</body>
