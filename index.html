@@ -6,6 +6,14 @@
 
 <body>
   <div id="editor" width="90%" height="600" background-color="green"></div>
+  <div>
+    <button id="testbutton">
+      import
+    </button>
+    <button id="exportbutton">
+      export
+    </button>
+  </div>
   <textarea id="input">
     {
       "mainTable名": {
@@ -38,6 +46,34 @@
             "hoge": 123,
             "fuga": 456,
             "piyo": 789
+          },
+          {
+            "subTable2名": [
+              {
+                "subTable2-1名": [
+                  {
+                    "hoge": "hogehogehoge",
+                    "fuga": "hogehogefuga",
+                    "piyo": "hogehogepiyo"
+                  },
+                  {
+                    "hoge": "fugahoge",
+                    "fuga": "fugafuga",
+                    "piyo": "fugapiyo"
+                  }
+                ]
+              },
+              {
+                "hoge": "subtable1_record1 hoge",
+                "fuga": "subtable1_record1 fuga",
+                "piyo": "subtable1_record1 piyo"
+              },
+              {
+                "hoge": "subtable1_record2 hoge",
+                "fuga": "subtable1_record2 fuga",
+                "piyo": "subtable1_record2 piyo"
+              }
+            ]
           }
         ],
         "rules": []
@@ -45,7 +81,4 @@
     }
   </textarea>
   <pre id="output"></pre>
-  <button id="testbutton">
-    JSON を変換
-  </button>
 </body>
