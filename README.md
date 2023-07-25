@@ -1,8 +1,86 @@
 # nocsv
 
-Treats JSON files of a particular format in a table like a csv.
+Treats JSON files of a particular format in a table like a csv.  
 特定のフォーマットで書かれた JSON ファイルを
 csv のように表形式で編集できる Editor です
+
+## サンプル
+
+画面表示
+
+![image](https://github.com/Kotaro-Nakagawa/nocsv/assets/20413732/8c6cd075-87d2-44f7-9237-fe5c76de5f26)
+
+<details>
+<summary>対応する JSON </summary>
+ 
+ ```json
+ {
+  "mainTable名": {
+    "columns": [
+      "hoge",
+      "fuga",
+      "piyo"
+    ],
+    "datas": [
+      {
+        "hoge": "record1 hoge",
+        "fuga": "record1 fuga",
+        "piyo": "record1 piyo"
+      },
+      {
+        "subTable名": [
+          {
+            "hoge": "subtable1_record1 hoge",
+            "fuga": "subtable1_record1 fuga",
+            "piyo": "subtable1_record1 piyo"
+          },
+          {
+            "hoge": "subtable1_record2 hoge",
+            "fuga": "subtable1_record2 fuga",
+            "piyo": "subtable1_record2 piyo"
+          }
+        ]
+      },
+      {
+        "hoge": 123,
+        "fuga": 456,
+        "piyo": 789
+      },
+      {
+        "subTable2名": [
+          {
+            "subTable2-1名": [
+              {
+                "hoge": "hogehogehoge",
+                "fuga": "hogehogefuga",
+                "piyo": "hogehogepiyo"
+              },
+              {
+                "hoge": "fugahoge",
+                "fuga": "fugafuga",
+                "piyo": "fugapiyo"
+              }
+            ]
+          },
+          {
+            "hoge": "subtable1_record1 hoge",
+            "fuga": "subtable1_record1 fuga",
+            "piyo": "subtable1_record1 piyo"
+          },
+          {
+            "hoge": "subtable1_record2 hoge",
+            "fuga": "subtable1_record2 fuga",
+            "piyo": "subtable1_record2 piyo"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  }
+}
+ ```
+
+</details>
 
 ## 形式
 
