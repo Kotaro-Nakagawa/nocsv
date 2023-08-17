@@ -3,6 +3,9 @@
     "sourceType": "module",
     "ecmaVersion": 13
   },
+  "env": {
+    "browser": true
+  },
   "rules": {
     "no-undef": "error"
   }
