@@ -169,7 +169,25 @@
             "column5": "value95"
           }
         ],
-        "rules": [],
+        "rules": {
+          "column1": {
+            "validation": {
+              "allow": [
+                {"data_type": "string", "examples": ["OK", "NG", "---"]}
+              ]
+            }
+          },
+          "column2": {
+            "validation": {
+              "allow": [
+                "INFINITE", 
+                "NAN", 
+                {"regex": "^(d)$", "examples": ["(1)"]},
+                {"data_type": "integer", "examples": [1, 2, 3]}
+              ]
+            }
+          }
+        },
         "styles": {
           "columnsWeight":{
             "column1": 1,
