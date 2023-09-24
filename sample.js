@@ -25,3 +25,47 @@ const tableWidthSlider = document.getElementById('tableWidth')
 tableWidthSlider.oninput = () => {
   editor.displayConfig.setMainWidth(parseInt(tableWidthSlider.value, 10))
 }
+
+/**
+ * @type {HTMLInputElement}
+ */
+const titleColorInput = document.getElementById('titleColor')
+titleColorInput.oninput = () => {
+  editor.displayConfig.setTitleColor(titleColorInput.value)
+}
+
+
+/**
+ * @type {HTMLInputElement}
+ */
+const headerColorInput = document.getElementById('headerColor')
+headerColorInput.oninput = () => {
+  editor.displayConfig.setHeaderColor(headerColorInput.value)
+}
+
+
+/**
+ * @type {HTMLInputElement}
+ */
+const cellColorInput = document.getElementById('cellColor')
+cellColorInput.oninput = () => {
+  editor.displayConfig.setCellColor(cellColorInput.value)
+}
+
+
+/**
+ * @type {HTMLInputElement}
+ */
+const subTitleColorInput = document.getElementById('subtitleColor')
+subTitleColorInput.oninput = () => {
+  editor.displayConfig.setSubTitleColor(subTitleColorInput.value)
+}
+
+
+/**
+ * @type {HTMLInputElement}
+ */
+const borderColorInput = document.getElementById('cellBorderColor')
+borderColorInput.oninput = () => {
+  editor.displayConfig.setCellBorderColor(borderColorInput.value)
+}
