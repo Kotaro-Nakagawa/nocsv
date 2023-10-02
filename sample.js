@@ -29,6 +29,23 @@ tableWidthSlider.oninput = () => {
 /**
  * @type {HTMLInputElement}
  */
+const tableMainXSlider = document.getElementById('mainX')
+tableMainXSlider.oninput = () => {
+  editor.displayConfig.setMainX(parseInt(tableMainXSlider.value, 10))
+}
+
+/**
+ * @type {HTMLInputElement}
+ */
+const tableMainYSlider = document.getElementById('mainY')
+tableMainYSlider.oninput = () => {
+  editor.displayConfig.setMainY(parseInt(tableMainYSlider.value, 10))
+}
+
+
+/**
+ * @type {HTMLInputElement}
+ */
 const titleColorInput = document.getElementById('titleColor')
 titleColorInput.oninput = () => {
   editor.displayConfig.setTitleColor(titleColorInput.value)
